@@ -1,15 +1,15 @@
 import {configureStore} from "@reduxjs/toolkit";
 import {TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
-import {fromInputReducer} from "./components/searchInput/fromInputSlice";
-import {toInputReducer} from "./components/searchInput/toInputSlice";
+import {originInputReducer} from "./components/searchInput/originInputSlice";
+import {destinationInputReducer} from "./components/searchInput/destinationInputSlice";
 import {dayInputReducer} from "./components/searchInput/dayInputSlice";
 import {searchResultReducer} from "./components/searchResult/searchResultSlice";
 
 
 export const store = configureStore({
     reducer: {
-        fromInput: fromInputReducer,
-        toInput: toInputReducer,
+        originInput: originInputReducer,
+        destinationInput: destinationInputReducer,
         dayInput: dayInputReducer,
         searchResult: searchResultReducer,
     }

@@ -1,7 +1,7 @@
-type resultType = {
+export type resultType = {
     busId: number,
-    from: string,
-    to: string,
+    origin: string,
+    destination: string,
     day: number,
 }
 
@@ -15,606 +15,620 @@ from and to is in ['Alameda', 'Alhambra', 'Anaheim', 'Antioch', 'Arcadia', 'Bake
     'Chula Vista', 'Claremont', 'Compton', 'Concord', 'Corona', 'Coronado', 'Costa Mesa', 'Culver City', 'Daly City']
 */
 // day is from 1 to 30
-// the number of results is 100
+// the number of results is 102!
 export const results: resultType[] = [
+    // The first three results are the same
     {
         "busId": 7,
-        "from": "Claremont",
-        "to": "Calistoga",
+        "origin": "Claremont",
+        "destination": "Calistoga",
         "day": 11
     },
     {
+        "busId": 7,
+        "origin": "Claremont",
+        "destination": "Calistoga",
+        "day": 11
+    },
+    {
+        "busId": 7,
+        "origin": "Claremont",
+        "destination": "Calistoga",
+        "day": 11
+    },
+
+    {
         "busId": 8,
-        "from": "Compton",
-        "to": "Barstow",
+        "origin": "Compton",
+        "destination": "Barstow",
         "day": 26
     },
     {
         "busId": 3,
-        "from": "Corona",
-        "to": "Brea",
+        "origin": "Corona",
+        "destination": "Brea",
         "day": 11
     },
     {
         "busId": 8,
-        "from": "Compton",
-        "to": "Antioch",
+        "origin": "Compton",
+        "destination": "Antioch",
         "day": 8
     },
     {
         "busId": 8,
-        "from": "Anaheim",
-        "to": "Concord",
+        "origin": "Anaheim",
+        "destination": "Concord",
         "day": 21
     },
     {
         "busId": 2,
-        "from": "Coronado",
-        "to": "Buena Park",
+        "origin": "Coronado",
+        "destination": "Buena Park",
         "day": 30
     },
     {
         "busId": 6,
-        "from": "Alhambra",
-        "to": "Compton",
+        "origin": "Alhambra",
+        "destination": "Compton",
         "day": 1
     },
     {
         "busId": 10,
-        "from": "Concord",
-        "to": "Buena Park",
+        "origin": "Concord",
+        "destination": "Buena Park",
         "day": 25
     },
     {
         "busId": 1,
-        "from": "Daly City",
-        "to": "Daly City",
+        "origin": "Daly City",
+        "destination": "Daly City",
         "day": 10
     },
     {
         "busId": 3,
-        "from": "Buena Park",
-        "to": "Corona",
+        "origin": "Buena Park",
+        "destination": "Corona",
         "day": 20
     },
     {
         "busId": 9,
-        "from": "Anaheim",
-        "to": "Arcadia",
+        "origin": "Anaheim",
+        "destination": "Arcadia",
         "day": 19
     },
     {
         "busId": 7,
-        "from": "Compton",
-        "to": "Berkeley",
+        "origin": "Compton",
+        "destination": "Berkeley",
         "day": 7
     },
     {
         "busId": 2,
-        "from": "Antioch",
-        "to": "Costa Mesa",
+        "origin": "Antioch",
+        "destination": "Costa Mesa",
         "day": 28
     },
     {
         "busId": 2,
-        "from": "Culver City",
-        "to": "Berkeley",
+        "origin": "Culver City",
+        "destination": "Berkeley",
         "day": 26
     },
     {
         "busId": 5,
-        "from": "Alhambra",
-        "to": "Claremont",
+        "origin": "Alhambra",
+        "destination": "Claremont",
         "day": 28
     },
     {
         "busId": 7,
-        "from": "Buena Park",
-        "to": "Belmont",
+        "origin": "Buena Park",
+        "destination": "Belmont",
         "day": 15
     },
     {
         "busId": 3,
-        "from": "Calexico",
-        "to": "Carmel",
+        "origin": "Calexico",
+        "destination": "Carmel",
         "day": 4
     },
     {
         "busId": 2,
-        "from": "Belmont",
-        "to": "Antioch",
+        "origin": "Belmont",
+        "destination": "Antioch",
         "day": 2
     },
     {
         "busId": 6,
-        "from": "Concord",
-        "to": "Beverly Hills",
+        "origin": "Concord",
+        "destination": "Beverly Hills",
         "day": 4
     },
     {
         "busId": 6,
-        "from": "Chico",
-        "to": "Culver City",
+        "origin": "Chico",
+        "destination": "Culver City",
         "day": 12
     },
     {
         "busId": 2,
-        "from": "Beverly Hills",
-        "to": "Antioch",
+        "origin": "Beverly Hills",
+        "destination": "Antioch",
         "day": 14
     },
     {
         "busId": 8,
-        "from": "Calexico",
-        "to": "Corona",
+        "origin": "Calexico",
+        "destination": "Corona",
         "day": 28
     },
     {
         "busId": 9,
-        "from": "Belmont",
-        "to": "Compton",
+        "origin": "Belmont",
+        "destination": "Compton",
         "day": 16
     },
     {
         "busId": 2,
-        "from": "Calistoga",
-        "to": "Compton",
+        "origin": "Calistoga",
+        "destination": "Compton",
         "day": 24
     },
     {
         "busId": 10,
-        "from": "Costa Mesa",
-        "to": "Burbank",
+        "origin": "Costa Mesa",
+        "destination": "Burbank",
         "day": 9
     },
     {
         "busId": 1,
-        "from": "Costa Mesa",
-        "to": "Barstow",
+        "origin": "Costa Mesa",
+        "destination": "Barstow",
         "day": 9
     },
     {
         "busId": 8,
-        "from": "Alameda",
-        "to": "Buena Park",
+        "origin": "Alameda",
+        "destination": "Buena Park",
         "day": 8
     },
     {
         "busId": 8,
-        "from": "Brea",
-        "to": "Chula Vista",
+        "origin": "Brea",
+        "destination": "Chula Vista",
         "day": 17
     },
     {
         "busId": 8,
-        "from": "Anaheim",
-        "to": "Anaheim",
+        "origin": "Anaheim",
+        "destination": "Anaheim",
         "day": 1
     },
     {
         "busId": 5,
-        "from": "Beverly Hills",
-        "to": "Barstow",
+        "origin": "Beverly Hills",
+        "destination": "Barstow",
         "day": 26
     },
     {
         "busId": 9,
-        "from": "Barstow",
-        "to": "Berkeley",
+        "origin": "Barstow",
+        "destination": "Berkeley",
         "day": 8
     },
     {
         "busId": 2,
-        "from": "Alameda",
-        "to": "Carlsbad",
+        "origin": "Alameda",
+        "destination": "Carlsbad",
         "day": 23
     },
     {
         "busId": 7,
-        "from": "Coronado",
-        "to": "Arcadia",
+        "origin": "Coronado",
+        "destination": "Arcadia",
         "day": 3
     },
     {
         "busId": 8,
-        "from": "Concord",
-        "to": "Daly City",
+        "origin": "Concord",
+        "destination": "Daly City",
         "day": 3
     },
     {
         "busId": 1,
-        "from": "Anaheim",
-        "to": "Arcadia",
+        "origin": "Anaheim",
+        "destination": "Arcadia",
         "day": 15
     },
     {
         "busId": 3,
-        "from": "Alameda",
-        "to": "Arcadia",
+        "origin": "Alameda",
+        "destination": "Arcadia",
         "day": 26
     },
     {
         "busId": 7,
-        "from": "Calexico",
-        "to": "Barstow",
+        "origin": "Calexico",
+        "destination": "Barstow",
         "day": 27
     },
     {
         "busId": 9,
-        "from": "Calistoga",
-        "to": "Calistoga",
+        "origin": "Calistoga",
+        "destination": "Calistoga",
         "day": 26
     },
     {
         "busId": 10,
-        "from": "Burbank",
-        "to": "Chula Vista",
+        "origin": "Burbank",
+        "destination": "Chula Vista",
         "day": 7
     },
     {
         "busId": 1,
-        "from": "Claremont",
-        "to": "Antioch",
+        "origin": "Claremont",
+        "destination": "Antioch",
         "day": 30
     },
     {
         "busId": 5,
-        "from": "Corona",
-        "to": "Barstow",
+        "origin": "Corona",
+        "destination": "Barstow",
         "day": 13
     },
     {
         "busId": 4,
-        "from": "Burbank",
-        "to": "Barstow",
+        "origin": "Burbank",
+        "destination": "Barstow",
         "day": 27
     },
     {
         "busId": 3,
-        "from": "Concord",
-        "to": "Alhambra",
+        "origin": "Concord",
+        "destination": "Alhambra",
         "day": 10
     },
     {
         "busId": 9,
-        "from": "Compton",
-        "to": "Bakersfield",
+        "origin": "Compton",
+        "destination": "Bakersfield",
         "day": 28
     },
     {
         "busId": 4,
-        "from": "Brea",
-        "to": "Culver City",
+        "origin": "Brea",
+        "destination": "Culver City",
         "day": 23
     },
     {
         "busId": 9,
-        "from": "Barstow",
-        "to": "Alameda",
+        "origin": "Barstow",
+        "destination": "Alameda",
         "day": 1
     },
     {
         "busId": 9,
-        "from": "Daly City",
-        "to": "Costa Mesa",
+        "origin": "Daly City",
+        "destination": "Costa Mesa",
         "day": 20
     },
     {
         "busId": 9,
-        "from": "Anaheim",
-        "to": "Barstow",
+        "origin": "Anaheim",
+        "destination": "Barstow",
         "day": 6
     },
     {
         "busId": 8,
-        "from": "Daly City",
-        "to": "Berkeley",
+        "origin": "Daly City",
+        "destination": "Berkeley",
         "day": 30
     },
     {
         "busId": 5,
-        "from": "Alameda",
-        "to": "Chula Vista",
+        "origin": "Alameda",
+        "destination": "Chula Vista",
         "day": 10
     },
     {
         "busId": 8,
-        "from": "Calistoga",
-        "to": "Daly City",
+        "origin": "Calistoga",
+        "destination": "Daly City",
         "day": 22
     },
     {
         "busId": 8,
-        "from": "Berkeley",
-        "to": "Claremont",
+        "origin": "Berkeley",
+        "destination": "Claremont",
         "day": 17
     },
     {
         "busId": 1,
-        "from": "Culver City",
-        "to": "Claremont",
+        "origin": "Culver City",
+        "destination": "Claremont",
         "day": 12
     },
     {
         "busId": 7,
-        "from": "Alhambra",
-        "to": "Anaheim",
+        "origin": "Alhambra",
+        "destination": "Anaheim",
         "day": 17
     },
     {
         "busId": 5,
-        "from": "Carmel",
-        "to": "Coronado",
+        "origin": "Carmel",
+        "destination": "Coronado",
         "day": 17
     },
     {
         "busId": 1,
-        "from": "Alhambra",
-        "to": "Alhambra",
+        "origin": "Alhambra",
+        "destination": "Alhambra",
         "day": 28
     },
     {
         "busId": 6,
-        "from": "Corona",
-        "to": "Arcadia",
+        "origin": "Corona",
+        "destination": "Arcadia",
         "day": 1
     },
     {
         "busId": 1,
-        "from": "Chula Vista",
-        "to": "Alhambra",
+        "origin": "Chula Vista",
+        "destination": "Alhambra",
         "day": 21
     },
     {
         "busId": 10,
-        "from": "Bakersfield",
-        "to": "Corona",
+        "origin": "Bakersfield",
+        "destination": "Corona",
         "day": 4
     },
     {
         "busId": 7,
-        "from": "Brea",
-        "to": "Coronado",
+        "origin": "Brea",
+        "destination": "Coronado",
         "day": 27
     },
     {
         "busId": 1,
-        "from": "Bakersfield",
-        "to": "Coronado",
+        "origin": "Bakersfield",
+        "destination": "Coronado",
         "day": 5
     },
     {
         "busId": 4,
-        "from": "Alhambra",
-        "to": "Bakersfield",
+        "origin": "Alhambra",
+        "destination": "Bakersfield",
         "day": 22
     },
     {
         "busId": 1,
-        "from": "Berkeley",
-        "to": "Daly City",
+        "origin": "Berkeley",
+        "destination": "Daly City",
         "day": 6
     },
     {
         "busId": 3,
-        "from": "Claremont",
-        "to": "Daly City",
+        "origin": "Claremont",
+        "destination": "Daly City",
         "day": 4
     },
     {
         "busId": 3,
-        "from": "Culver City",
-        "to": "Anaheim",
+        "origin": "Culver City",
+        "destination": "Anaheim",
         "day": 19
     },
     {
         "busId": 4,
-        "from": "Barstow",
-        "to": "Claremont",
+        "origin": "Barstow",
+        "destination": "Claremont",
         "day": 9
     },
     {
         "busId": 1,
-        "from": "Belmont",
-        "to": "Barstow",
+        "origin": "Belmont",
+        "destination": "Barstow",
         "day": 18
     },
     {
         "busId": 8,
-        "from": "Alameda",
-        "to": "Brea",
+        "origin": "Alameda",
+        "destination": "Brea",
         "day": 28
     },
     {
         "busId": 9,
-        "from": "Costa Mesa",
-        "to": "Chico",
+        "origin": "Costa Mesa",
+        "destination": "Chico",
         "day": 23
     },
     {
         "busId": 10,
-        "from": "Anaheim",
-        "to": "Barstow",
+        "origin": "Anaheim",
+        "destination": "Barstow",
         "day": 28
     },
     {
         "busId": 10,
-        "from": "Carlsbad",
-        "to": "Costa Mesa",
+        "origin": "Carlsbad",
+        "destination": "Costa Mesa",
         "day": 20
     },
     {
         "busId": 1,
-        "from": "Alhambra",
-        "to": "Alameda",
+        "origin": "Alhambra",
+        "destination": "Alameda",
         "day": 16
     },
     {
         "busId": 5,
-        "from": "Arcadia",
-        "to": "Daly City",
+        "origin": "Arcadia",
+        "destination": "Daly City",
         "day": 23
     },
     {
         "busId": 9,
-        "from": "Berkeley",
-        "to": "Anaheim",
+        "origin": "Berkeley",
+        "destination": "Anaheim",
         "day": 19
     },
     {
         "busId": 3,
-        "from": "Claremont",
-        "to": "Coronado",
+        "origin": "Claremont",
+        "destination": "Coronado",
         "day": 22
     },
     {
         "busId": 8,
-        "from": "Alameda",
-        "to": "Coronado",
+        "origin": "Alameda",
+        "destination": "Coronado",
         "day": 20
     },
     {
         "busId": 1,
-        "from": "Belmont",
-        "to": "Antioch",
+        "origin": "Belmont",
+        "destination": "Antioch",
         "day": 6
     },
     {
         "busId": 8,
-        "from": "Claremont",
-        "to": "Anaheim",
+        "origin": "Claremont",
+        "destination": "Anaheim",
         "day": 16
     },
     {
         "busId": 9,
-        "from": "Anaheim",
-        "to": "Costa Mesa",
+        "origin": "Anaheim",
+        "destination": "Costa Mesa",
         "day": 29
     },
     {
         "busId": 2,
-        "from": "Calexico",
-        "to": "Chico",
+        "origin": "Calexico",
+        "destination": "Chico",
         "day": 2
     },
     {
         "busId": 6,
-        "from": "Anaheim",
-        "to": "Carlsbad",
+        "origin": "Anaheim",
+        "destination": "Carlsbad",
         "day": 29
     },
     {
         "busId": 9,
-        "from": "Antioch",
-        "to": "Alameda",
+        "origin": "Antioch",
+        "destination": "Alameda",
         "day": 4
     },
     {
         "busId": 1,
-        "from": "Calexico",
-        "to": "Compton",
+        "origin": "Calexico",
+        "destination": "Compton",
         "day": 16
     },
     {
         "busId": 4,
-        "from": "Coronado",
-        "to": "Belmont",
+        "origin": "Coronado",
+        "destination": "Belmont",
         "day": 7
     },
     {
         "busId": 3,
-        "from": "Carmel",
-        "to": "Alameda",
+        "origin": "Carmel",
+        "destination": "Alameda",
         "day": 16
     },
     {
         "busId": 3,
-        "from": "Concord",
-        "to": "Corona",
+        "origin": "Concord",
+        "destination": "Corona",
         "day": 22
     },
     {
         "busId": 6,
-        "from": "Bakersfield",
-        "to": "Burbank",
+        "origin": "Bakersfield",
+        "destination": "Burbank",
         "day": 19
     },
     {
         "busId": 6,
-        "from": "Belmont",
-        "to": "Daly City",
+        "origin": "Belmont",
+        "destination": "Daly City",
         "day": 27
     },
     {
         "busId": 2,
-        "from": "Compton",
-        "to": "Alameda",
+        "origin": "Compton",
+        "destination": "Alameda",
         "day": 28
     },
     {
         "busId": 1,
-        "from": "Arcadia",
-        "to": "Carlsbad",
+        "origin": "Arcadia",
+        "destination": "Carlsbad",
         "day": 19
     },
     {
         "busId": 4,
-        "from": "Anaheim",
-        "to": "Carmel",
+        "origin": "Anaheim",
+        "destination": "Carmel",
         "day": 17
     },
     {
         "busId": 5,
-        "from": "Bakersfield",
-        "to": "Anaheim",
+        "origin": "Bakersfield",
+        "destination": "Anaheim",
         "day": 28
     },
     {
         "busId": 9,
-        "from": "Arcadia",
-        "to": "Coronado",
+        "origin": "Arcadia",
+        "destination": "Coronado",
         "day": 29
     },
     {
         "busId": 1,
-        "from": "Calexico",
-        "to": "Compton",
+        "origin": "Calexico",
+        "destination": "Compton",
         "day": 3
     },
     {
         "busId": 1,
-        "from": "Claremont",
-        "to": "Compton",
+        "origin": "Claremont",
+        "destination": "Compton",
         "day": 23
     },
     {
         "busId": 1,
-        "from": "Anaheim",
-        "to": "Chico",
+        "origin": "Anaheim",
+        "destination": "Chico",
         "day": 25
     },
     {
         "busId": 10,
-        "from": "Concord",
-        "to": "Culver City",
+        "origin": "Concord",
+        "destination": "Culver City",
         "day": 3
     },
     {
         "busId": 8,
-        "from": "Calexico",
-        "to": "Coronado",
+        "origin": "Calexico",
+        "destination": "Coronado",
         "day": 18
     },
     {
         "busId": 6,
-        "from": "Corona",
-        "to": "Alhambra",
+        "origin": "Corona",
+        "destination": "Alhambra",
         "day": 27
     },
     {
         "busId": 10,
-        "from": "Alhambra",
-        "to": "Culver City",
+        "origin": "Alhambra",
+        "destination": "Culver City",
         "day": 17
     }
 ]
