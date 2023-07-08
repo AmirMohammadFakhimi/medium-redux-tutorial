@@ -17,7 +17,7 @@ export const searchResultSlice = createSlice({
             // }
 
             // This is not correct because it changes the reference of the state, so the new UI does not dispatch
-            // state = state.concat(action.payload)
+            // state = action.payload
 
             // This is also correct. In an immutable manner.
             return action.payload

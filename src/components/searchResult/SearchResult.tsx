@@ -3,10 +3,11 @@ import './SearchResult.css'
 import {useAppSelector} from "../../store";
 import {resultsType} from "./results";
 
+
 export function SearchResult() {
     const searchResults: resultsType = useAppSelector(state => state.searchResult)
-
     const numberOfResults = useAppSelector(state => state.searchResult.length)
+    // const numberOfResults = searchResults.length
 
     return (
         <div id={'search-result-div'}>

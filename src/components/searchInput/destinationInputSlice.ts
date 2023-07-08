@@ -1,10 +1,10 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {results} from "../searchResult/results";
+
 
 export const destinationInputSlice = createSlice({
     name: 'destinationInput',
     initialState: {
-        value: results[0].destination
+        value: ''
     },
     reducers: {
         setDestinationInput: (state, action: PayloadAction<string>) => {

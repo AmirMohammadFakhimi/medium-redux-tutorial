@@ -16,7 +16,7 @@ from and to is in ['Alameda', 'Alhambra', 'Anaheim', 'Antioch', 'Arcadia', 'Bake
 */
 // day is from 1 to 30
 // the number of results is 102!
-export const results: resultType[] = [
+export const results: resultsType = [
     // The first three results are the same
     {
         "busId": 7,
@@ -631,4 +631,5 @@ export const results: resultType[] = [
         "destination": "Culver City",
         "day": 17
     }
+
 ]

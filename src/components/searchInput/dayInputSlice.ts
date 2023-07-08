@@ -1,8 +1,9 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
+
 export const dayInputSlice = createSlice({
     name: 'dayInput',
-    initialState: 11,
+    initialState: 1,
     reducers: {
         setDayInput: (state, action: PayloadAction<number>) => action.payload
     }
